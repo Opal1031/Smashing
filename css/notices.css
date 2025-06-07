@@ -1,0 +1,73 @@
+/* notices.css */
+
+/* 전체 공지 아이템 */
+.notice-item {
+    max-width: 960px;
+    overflow: hidden;
+    margin: 20px 0;
+    border-left: 6px solid #d32f2f;
+    border-radius: 8px;
+    background-color: #fffaf0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 버튼 스타일 */
+.notice-title {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    background: none;
+    background-color: #fff0f0;
+    border: none;
+    color: #d32f2f;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* 진행중 공지 - 파랑 */
+.notice-item.ongoing {
+    border-left: 6px solid #1976d2;
+}
+.notice-item.ongoing .notice-title {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+/* 종료된 공지 - 검정 */
+.notice-item.closed {
+    border-left: 6px solid #444;
+}
+.notice-item.closed .notice-title {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* 상태별 hover 효과를 따로 정의 */
+/* 상시공지만 기본 hover */
+.notice-item:not(.ongoing):not(.closed) .notice-title:hover {
+    background-color: #ffeaea;
+}
+
+.notice-item.ongoing .notice-title:hover {
+    background-color: #bbdefb; /* 연한 파랑 hover */
+}
+
+.notice-item.closed .notice-title:hover {
+    background-color: #e0e0e0; /* 연한 회색 hover */
+}
+
+/* 내용 (기본 숨김) */
+.notice-content {
+    display: none;
+    padding: 15px 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 열렸을 때 내용 보임 */
+.notice-item.open .notice-content {
+    display: block;
+}

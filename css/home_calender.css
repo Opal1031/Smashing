@@ -1,0 +1,79 @@
+/* home_calendar.css */
+
+/* 캘린더 전체 영역 스타일 */
+.calendar-box {
+    background-color: #f2f2ff;
+    border-left: 5px solid #3333aa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* 캘린더 제목 */
+.calendar-box h3 {
+    margin-top: 0;
+    color: #3333aa;
+}
+
+/* 캘린더 placeholder 영역 (초기/빈 상태 또는 동적 출력 대상) */
+.calendar-placeholder {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8ff;
+    border-radius: 6px;
+    color: #666;
+    font-style: italic;
+}
+
+/* 캘린더 헤더 (이전/다음 버튼 + 날짜 표시) */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+
+.calendar-header span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* 달력 테이블 */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+}
+
+.calendar-table th,
+.calendar-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.calendar-table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-table .today {
+    background-color: #d32f2f;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #a00;
+}

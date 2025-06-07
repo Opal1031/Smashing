@@ -1,0 +1,56 @@
+/* gallery.css */
+
+/* 갤러리 전체 레이아웃 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 960px;
+    padding: 20px;
+    margin: auto;
+}
+
+/* 갤러리 아이템 기본 스타일 */
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+/* 갤러리 이미지 스타일 */
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* 빈 자리용 갤러리 아이템 */
+.gallery-item.empty {
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+}
+
+/* 이미지 캡션 텍스트 */
+.caption {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+/* 페이지네이션 컨테이너 */
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* 페이지네이션 버튼 스타일 */
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
