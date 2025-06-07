@@ -1,0 +1,86 @@
+/* conven.css */
+
+/* ───────────────────────────────
+🎯 조 편성 테이블
+─────────────────────────────── */
+.team-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.team-table th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #e0f7fa;
+    color: #00796b;
+    font-weight: bold;
+}
+
+.team-table td {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.team-table input {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* ───────────────────────────────
+🏆 토너먼트 대진표
+─────────────────────────────── */
+.bracket-horizontal {
+    height : 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    margin: 10px auto;
+    align-items: center;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.match {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    border: 2px solid #444;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.match:hover {
+    background-color: #f1f1f1;
+}
+
+.match.winner {
+    background-color: #ffecb3;
+    font-weight: bold;
+}
+
+.spacer {
+    height: 45px;
+}
+
+.spacer-tall {
+    height: 180px;
+}
+
+.spacer-tall-2x {
+    height: 140px;
+}

@@ -1,0 +1,132 @@
+<!-- conven.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>소개 - SMASHING</title>
+
+        <link href = "../images/smashing.jpg" rel = "shortcut icon" type = "image/x-icon">
+        <link rel = "stylesheet" href = "../css/style.css">
+        <link rel = "stylesheet" href = "../css/conven.css">
+    </head>
+
+    <body>
+        <header>
+            <a href = "../index.html" class = "header-link">
+                <div class = "header-content">
+                    <img src = "../images/Logo.jpg" alt = "로고" class = "logo">
+                    <h1>S M A S H I N G</h1>
+                    <br>
+                    부경대학교 운동1분과 탁구동아리
+                </div>
+            </a>
+        </header>
+
+        <nav>
+            <a href = "../index.html">홈</a>
+            <a href = "./intro.html">소개</a>
+            <a href = "./gallery.html">활동 사진</a>
+            <a href = "./join.html">가입 안내</a>
+            <a href = "./notices.html">공지사항</a>
+            <a href = "conven.html">편의 기능</a>
+        </nav>
+
+        <main>
+            <!-- 🎯 조 편성 입력 -->
+            <section>
+                <h3>🎯 조 편성 입력</h3>
+
+                <table class="team-table">
+                    <thead>
+                        <tr>
+                        <th>1조</th><th>2조</th><th>3조</th><th>4조</th>
+                        <th>5조</th><th>6조</th><th>7조</th><th>8조</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- 6명씩 입력 가능한 6행 -->
+                        <tr>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        <td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3>🏆 토너먼트 대진표</h3>
+
+                <div class = "bracket-horizontal">
+                    <!-- 8강 -->
+                    <div class = "round">
+                        <div class = "match" data-next = "qf1">1조</div>
+                        <div class = "match" data-next = "qf1">2조</div>
+                        <div class = "match" data-next = "qf2">3조</div>
+                        <div class = "match" data-next = "qf2">4조</div>
+                        <div class = "match" data-next = "qf3">5조</div>
+                        <div class = "match" data-next = "qf3">6조</div>
+                        <div class = "match" data-next = "qf4">7조</div>
+                        <div class = "match" data-next = "qf4">8조</div>
+                    </div>
+
+                    <!-- 4강 -->
+                    <div class = "round">
+                        <div class = "spacer"></div>
+                        <div class = "match" id = "qf1" data-next = "sf1"></div>
+                        <div class = "spacer"></div>
+                        <div class =  "match" id = "qf2" data-next = "sf1"></div>
+                        <div class = "spacer"></div>
+                        <div class = "match" id = "qf3" data-next = "sf2"></div>
+                        <div class = "spacer"></div>
+                        <div class = "match" id = "qf4" data-next = "sf2"></div>
+                        <div class = "spacer"></div>
+                    </div>
+
+                    <!-- 결승 -->
+                    <div class = "round">
+                        <div class = "spacer-tall"></div>
+                        <div class = "match" id = "sf1" data-next = "final"></div>
+                        <div class = "spacer-tall"></div>
+                        <div class = "match" id = "sf2" data-next = "final"></div>
+                        <div class = "spacer-tall"></div>
+                    </div>
+
+                    <!-- 우승 -->
+                    <div class = "round">
+                        <div class = "spacer-tall-2x"></div>
+                        <div class = "match winner" id = "final"></div>
+                        <div class = "spacer-tall-2x"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 SMASHING. All rights reserved.</p>
+        </footer>
+
+                <script src = "../js/conven.js"></script>
+    </body>
+</html>
