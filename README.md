@@ -3,6 +3,9 @@
 ![Generic badge](https://img.shields.io/badge/version-4.0-green.svg)
 
 <br>
+![Image](https://github.com/user-attachments/assets/36ce32eb-bc5a-4f76-9aa8-0cf9129879b5)
+<br>
+
 
 ```
 해당 웹페이지는 부경대학교 운동1분과 탁구동아리 '스매싱(Smashing)'의 공식 웹페이지입니다.
