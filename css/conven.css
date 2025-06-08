@@ -48,7 +48,6 @@
 .round {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
 }
 
@@ -74,11 +73,11 @@
 }
 
 .spacer {
-    height: 45px;
+    height: 44px;
 }
 
 .spacer-tall {
-    height: 180px;
+    height: 132px;
 }
 
 .spacer-tall-2x {
