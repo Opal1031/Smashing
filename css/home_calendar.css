@@ -58,6 +58,7 @@
     border-collapse: collapse;
     text-align: center;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .calendar-table th,
@@ -76,4 +77,55 @@
     color: white;
     font-weight: bold;
     border: 2px solid #a00;
+}
+
+.calendar-table td.selected {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+/* 빨간 점 : 이벤트 */
+.calendar-table .event-dot::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 2px auto 0;
+    background-color: #d32f2f;
+    border-radius: 50%;
+}
+
+/* 검은 점 : 정기 훈련 */
+.calendar-table .training-dot::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 2px auto 0;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+/* 하단 이벤트 출력 */
+.event-list {
+    margin-top: 10px;
+    background-color: #fff0f0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: #333;
+}
+
+.event-list h4 {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.event-list ul {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+.event-list li {
+    font-size: 15px;
+    margin-bottom: 4px;
 }
