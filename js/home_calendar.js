@@ -84,10 +84,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 const clickedDate = td.getAttribute('data-date');
                 const events = calendarEvents.filter(event => event.date === clickedDate);
 
+                // ⬇️ 기존 선택된 셀에서 .selected 제거
+                document.querySelectorAll('.calendar-table td.selected').forEach(cell => {
+                    cell.classList.remove('selected');
+                });
+
+                // ⬇️ 클릭한 셀에 .selected 추가
+                td.classList.add('selected');
+
                 renderEventList(events, clickedDate);
             };
         });
-    }
+    };
+
 
     // 이벤트 리스트 출력 함수
     function renderEventList(events, dateStr) {
